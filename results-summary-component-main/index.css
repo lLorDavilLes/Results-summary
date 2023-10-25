@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Lightred: hsl(0, 63%, 93%);
+    --Orangeyyellow: hsl(45, 76%, 92%);
+    --Greenteal: hsl(166, 85%, 95%);
+    --Cobaltblue: hsl(234, 85%, 45%);
+    --Lightslateblue: hsl(252, 100%, 67%);
+    --Lightroyalblue: hsl(241, 81%, 54%);
+    --Violetblue: rgb(210, 206, 220);
+    --Persianblue: hsla(241, 72%, 46%, 0);   
+    --White: hsl(0, 0%, 100%);
+    --Paleblue: hsl(221, 100%, 96%);
+    --Lightlavender: hsl(241, 100%, 89%);
+    --Darkgrayblue: hsl(224, 30%, 27%);
+    --Blackshadow: rgb(206, 203, 203);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Hanken Grotesk', sans-serif;
+
+}
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+    width: 35rem;
+    height: 24rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem 0 var(--Blackshadow);
+}
+
+.section-one{
+    border-radius: 1rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--Lightroyalblue);
+    gap: 1rem;
+    color: var(--White);
+    background-image: linear-gradient(var(--Lightslateblue),var(--Lightroyalblue));
+
+}
+
+.first-header{
+    position: relative;
+    margin-bottom: 1rem;
+    color: var(--Lightlavender);
+    font-size: 1.1rem;
+}
+
+.main-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-container{
+    width: 9rem;
+    height: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5rem;
+    background-image: linear-gradient(var(--Cobaltblue),var(--Lightslateblue));
+    
+
+}
+
+.score{
+    font-size: 3rem;
+    font-weight: bold;
+
+}
+
+.score-paragraph{
+    font-size: 0.8rem;
+    color: var(--Lightlavender);
+
+}
+
+.result-container{
+    font-size: 0.8rem;
+    color: var(--Lightlavender);
+    text-align: center;
+    padding: 0 3rem;
+}
+
+.section-two{
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+
+}
+
+.third-header{
+    position: relative;
+    margin-top: 20px;
+
+}
+
+.sumary-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.8rem;
+    position: relative;
+    margin-top:0.3rem;
+}
+
+.reaction{
+    border-radius: 0.3rem;
+    width: 100%;
+    height: 2.3rem;
+    background-color: var(--Lightred);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.reaction span{
+    color: rgb(246, 99, 99);
+}
+
+img{
+    margin-right: 0.8rem;
+}
+
+.memory{
+    border-radius: 0.3rem;
+    width: 100%;
+    height: 2.3rem;
+    background-color: var(--Orangeyyellow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.memory span{
+    color: rgb(243, 173, 43);
+}
+
+.verbal{
+    
+    border-radius: 0.3rem;
+    width: 100%;
+    height: 2.3rem;
+    background-color: var(--Greenteal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+
+}
+
+.verbal span{
+    color: rgb(48, 187, 48);
+}
+
+.visual{
+    
+    border-radius: 0.3rem;
+    width: 100%;
+    height: 2.3rem;
+    background-color: var(--Lightlavender);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.visual span{
+    color: rgb(6, 6, 121);
+}
+
+.summary-btn{
+
+    background-color: var(--Darkgrayblue);
+    color: var(--White);
+    height: 2.3rem;
+    border-radius: 2rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 400px){
+    
+
+    .main-container{
+        width: 100%;
+        height: 100vh;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-one{
+        width: 100%;
+        height: 50%;
+        border-radius: 0 0 1.5rem 1.5rem;
+    }
+
+    .section-two{
+        width: 100%;
+        height: 50%;
+    }
+}
